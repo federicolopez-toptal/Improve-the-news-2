@@ -1,0 +1,13 @@
+//
+//  Utils.swift
+//  Improve the News
+//
+//  Created by Federico Lopez on 03/11/2021.
+//
+
+import Foundation
+
+
+func PAUSE(time: TimeInterval) {
+    Thread.sleep(forTimeInterval: time)
+}
