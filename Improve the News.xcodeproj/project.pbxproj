@@ -15,6 +15,11 @@
 		BDE06DAC2732CD42000396B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE06DAA2732CD42000396B2 /* LaunchScreen.storyboard */; };
 		BDE06DB72732D150000396B2 /* to-do.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDE06DB62732D150000396B2 /* to-do.plist */; };
 		BDE06DB92732D21A000396B2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DB82732D21A000396B2 /* Utils.swift */; };
+		BDE06DBD2732D449000396B2 /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DBC2732D449000396B2 /* CustomNavController.swift */; };
+		BDE06DBF2732D494000396B2 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DBE2732D494000396B2 /* NewsViewController.swift */; };
+		BDE06DC12732D6E9000396B2 /* UIThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DC02732D6E9000396B2 /* UIThemes.swift */; };
+		BDE06DC32732DB03000396B2 /* CommonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DC22732DB03000396B2 /* CommonData.swift */; };
+		BDE06DC62732E229000396B2 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DC52732E229000396B2 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		BDE06DAD2732CD42000396B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDE06DB62732D150000396B2 /* to-do.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "to-do.plist"; sourceTree = "<group>"; };
 		BDE06DB82732D21A000396B2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		BDE06DBC2732D449000396B2 /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
+		BDE06DBE2732D494000396B2 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		BDE06DC02732D6E9000396B2 /* UIThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIThemes.swift; sourceTree = "<group>"; };
+		BDE06DC22732DB03000396B2 /* CommonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonData.swift; sourceTree = "<group>"; };
+		BDE06DC52732E229000396B2 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +70,11 @@
 		BDE06D9E2732CD3F000396B2 /* Improve the News */ = {
 			isa = PBXGroup;
 			children = (
+				BDE06DC22732DB03000396B2 /* CommonData.swift */,
 				BDE06DB32732CEA9000396B2 /* app */,
 				BDE06DBA2732D272000396B2 /* misc */,
+				BDE06DC42732E213000396B2 /* extensions */,
+				BDE06DBB2732D42B000396B2 /* components */,
 				BDE06DB52732D119000396B2 /* viewControllers */,
 				BDE06DB42732D104000396B2 /* resources */,
 				BDE06DB62732D150000396B2 /* to-do.plist */,
@@ -93,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				BDE06DA32732CD3F000396B2 /* ViewController.swift */,
+				BDE06DBE2732D494000396B2 /* NewsViewController.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -101,8 +115,25 @@
 			isa = PBXGroup;
 			children = (
 				BDE06DB82732D21A000396B2 /* Utils.swift */,
+				BDE06DC02732D6E9000396B2 /* UIThemes.swift */,
 			);
 			path = misc;
+			sourceTree = "<group>";
+		};
+		BDE06DBB2732D42B000396B2 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				BDE06DBC2732D449000396B2 /* CustomNavController.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		BDE06DC42732E213000396B2 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BDE06DC52732E229000396B2 /* UIColorExtension.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +208,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE06DC12732D6E9000396B2 /* UIThemes.swift in Sources */,
 				BDE06DA42732CD3F000396B2 /* ViewController.swift in Sources */,
 				BDE06DB92732D21A000396B2 /* Utils.swift in Sources */,
 				BDE06DA02732CD3F000396B2 /* AppDelegate.swift in Sources */,
+				BDE06DBF2732D494000396B2 /* NewsViewController.swift in Sources */,
+				BDE06DC62732E229000396B2 /* UIColorExtension.swift in Sources */,
+				BDE06DBD2732D449000396B2 /* CustomNavController.swift in Sources */,
+				BDE06DC32732DB03000396B2 /* CommonData.swift in Sources */,
 				BDE06DA22732CD3F000396B2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -3,8 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>Pendientes</key>
-	<array/>
+	<dict>
+		<key>CommonData</key>
+		<dict>
+			<key>Leer display mode desde un setting local</key>
+			<string></string>
+		</dict>
+	</dict>
 	<key>Listos</key>
-	<array/>
+	<dict/>
 </dict>
 </plist>
