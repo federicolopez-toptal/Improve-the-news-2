@@ -4,6 +4,18 @@
 <dict>
 	<key>Pendientes</key>
 	<dict>
+		<key>Data</key>
+		<dict>
+			<key>base url, traerla dinamicamente</key>
+			<string></string>
+			<key>traer el valor de los sliders dinamicamente</key>
+			<string></string>
+		</dict>
+		<key>UI</key>
+		<dict>
+			<key>Averiguar xq el UINavigationBarAppearance me jode el style del statusBar</key>
+			<string></string>
+		</dict>
 		<key>CommonData</key>
 		<dict>
 			<key>Leer display mode desde un setting local</key>

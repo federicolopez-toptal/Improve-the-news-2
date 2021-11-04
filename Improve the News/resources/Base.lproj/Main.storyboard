@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aJ9-SK-7Wy">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </tableView>
                         </subviews>
@@ -27,11 +27,15 @@
                         <constraints>
                             <constraint firstItem="aJ9-SK-7Wy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3Hz-5d-XjI"/>
                             <constraint firstItem="aJ9-SK-7Wy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N36-Zk-HBM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aJ9-SK-7Wy" secondAttribute="bottom" constant="-34" id="Xhp-6X-Zrg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aJ9-SK-7Wy" secondAttribute="bottom" id="Xhp-6X-Zrg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aJ9-SK-7Wy" secondAttribute="trailing" id="nJd-HU-4Tx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="N6l-vp-HYT"/>
+                    <connections>
+                        <outlet property="list" destination="aJ9-SK-7Wy" id="LXD-aE-KS0"/>
+                        <outlet property="listBottomConstraint" destination="Xhp-6X-Zrg" id="TDh-W2-qsd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -15,6 +15,6 @@ class CommonData {
     var currentUniqueId = 0
 
     func start() {
-        self.displayMode = .dark    //!!!
+        self.displayMode = .dark//!!!
     }
 }

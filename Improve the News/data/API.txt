@@ -1,0 +1,77 @@
+API CALL example:
+https://www.improvethenews.org/appserver.php/?topic=news.A4.B4.S0&sliders=LR50PE50NU70DE70SL70RE70SS00LA00yT01VM00VA00VC00VB00VE33oB11&uid=3652074571149455182&v=I1.3.2&dev=iPhone_X
+
+****************************************
+* API simple PARAMS
+****************************************
+
+A       number of articles for main topic - Default: 4
+B       number of articles for each sub-topic - Default: 4
+S       number of articles to SKIP for the main topic - Default: 0
+uid     "user" unique identifier, valid for a device
+v       app version
+dev     device name
+
+****************************************
+* API sliders PARAM
+****************************************
+
+Preferences orange panel - Slider values
+2 Int digits, values from 0 to 99
+    Default values for LR and PE is 50
+    Default values for the rest is 70
+
+LR      Political stance value (Left / Right)
+PE      Establishment stance value (Critical / Pro)
+
+NU      Writing style value (Provocative / Nuanced)
+DE      Depth value (Breezy / Detailed)
+SL      Shelf-life value (Short / Long)
+RE      Recency value (Evergreen / Latest)
+
+------------------------------------------------
+Preferences orange panel - misc info
+
+SS  Preferences panel status (2 Int digits)
+    * 1st digit is for "split" status -- 0: No split, 1: LR split, 2: PE split
+    * 2nd digit is for the panel visibility -- 0: closed, 1: showing 2 rows, 2: showing all rows
+
+------------------------------------------------
+App current news layout
+
+    LA  Selected layout (2 Int digits)
+        * 1st digit is for the layout -- 0: Dense & Intense, 1: Text only, 2: Big & Beautiful
+        * 2nd digit is for the "Display mode" -- 0: Dark mode, 1: Bright mode
+    
+------------------------------------------------
+Banner/Ads
+    
+    yT  YouTube banner (2 Int digits) to indicate user interaction
+        * 01: Banner shown, no interaction from the user
+        * 02: Banner shown, user clicked on "Close"
+        * 03: Banner shown, user checked "Don't show again" then clicked on "Close"
+        * 04: User clicked on the banner (pop-up to the video)
+    
+------------------------------------------------
+    
+More Preferences
+
+    Each value provides 2 Int digits -- 00: Enabled, 01: Disabled
+    
+    VA  Show newspaper flags status
+    VB  Show newspaper stance icons
+    VC  Show newspaper info popups
+    VM  Show star ratings for articles
+    
+    VE  Version code (???) - 2 Int digits
+        * 1st digit is for platform -- 2: website, 3: iOS, 4: Android
+        * 2nd digit is for the app minor (second number) version
+        Example: My app version is (iOS) 1.3.2, so send "VE33"
+    
+------------------------------------------------
+Onboarding/Tour
+
+    oB  Tour status (2 Int digits) to indicate user interaction
+        * 1st digit is for tour visibility -- 0: Visible, 1: Hidden
+        * 2nd digit if for the tour step -- values from 0 to 6
+        Note: IF the user completes the tour: Send a "10"

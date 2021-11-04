@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD60C25227346D5F00A3A8C0 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD60C25127346D5F00A3A8C0 /* StringExtension.swift */; };
+		BD60C25427346E9600A3A8C0 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD60C25327346E9600A3A8C0 /* UIDeviceExtension.swift */; };
+		BD60C25627346EF100A3A8C0 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD60C25527346EF100A3A8C0 /* BundleExtension.swift */; };
+		BD60C2582734753900A3A8C0 /* API.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD60C2572734753900A3A8C0 /* API.txt */; };
 		BDE06DA02732CD3F000396B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06D9F2732CD3F000396B2 /* AppDelegate.swift */; };
 		BDE06DA22732CD3F000396B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DA12732CD3F000396B2 /* SceneDelegate.swift */; };
-		BDE06DA42732CD3F000396B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DA32732CD3F000396B2 /* ViewController.swift */; };
 		BDE06DA72732CD3F000396B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE06DA52732CD3F000396B2 /* Main.storyboard */; };
 		BDE06DA92732CD42000396B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE06DA82732CD42000396B2 /* Assets.xcassets */; };
 		BDE06DAC2732CD42000396B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE06DAA2732CD42000396B2 /* LaunchScreen.storyboard */; };
@@ -20,13 +23,19 @@
 		BDE06DC12732D6E9000396B2 /* UIThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DC02732D6E9000396B2 /* UIThemes.swift */; };
 		BDE06DC32732DB03000396B2 /* CommonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DC22732DB03000396B2 /* CommonData.swift */; };
 		BDE06DC62732E229000396B2 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DC52732E229000396B2 /* UIColorExtension.swift */; };
+		BDE06DC82733079B000396B2 /* NewsBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DC72733079B000396B2 /* NewsBaseViewController.swift */; };
+		BDE06DCB27330E06000396B2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DCA27330E06000396B2 /* API.swift */; };
+		BDE06DCD27331562000396B2 /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = BDE06DCC27331561000396B2 /* notes.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD60C25127346D5F00A3A8C0 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		BD60C25327346E9600A3A8C0 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		BD60C25527346EF100A3A8C0 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		BD60C2572734753900A3A8C0 /* API.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = API.txt; sourceTree = "<group>"; };
 		BDE06D9C2732CD3F000396B2 /* Improve the News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Improve the News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE06D9F2732CD3F000396B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDE06DA12732CD3F000396B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BDE06DA32732CD3F000396B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BDE06DA62732CD3F000396B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDE06DA82732CD42000396B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDE06DAB2732CD42000396B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +47,9 @@
 		BDE06DC02732D6E9000396B2 /* UIThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIThemes.swift; sourceTree = "<group>"; };
 		BDE06DC22732DB03000396B2 /* CommonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonData.swift; sourceTree = "<group>"; };
 		BDE06DC52732E229000396B2 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		BDE06DC72733079B000396B2 /* NewsBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBaseViewController.swift; sourceTree = "<group>"; };
+		BDE06DCA27330E06000396B2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BDE06DCC27331561000396B2 /* notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +85,12 @@
 				BDE06DC22732DB03000396B2 /* CommonData.swift */,
 				BDE06DB32732CEA9000396B2 /* app */,
 				BDE06DBA2732D272000396B2 /* misc */,
+				BDE06DC927330DF1000396B2 /* data */,
 				BDE06DC42732E213000396B2 /* extensions */,
 				BDE06DBB2732D42B000396B2 /* components */,
 				BDE06DB52732D119000396B2 /* viewControllers */,
 				BDE06DB42732D104000396B2 /* resources */,
+				BDE06DCC27331561000396B2 /* notes.txt */,
 				BDE06DB62732D150000396B2 /* to-do.plist */,
 			);
 			path = "Improve the News";
@@ -105,7 +119,7 @@
 		BDE06DB52732D119000396B2 /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				BDE06DA32732CD3F000396B2 /* ViewController.swift */,
+				BDE06DC72733079B000396B2 /* NewsBaseViewController.swift */,
 				BDE06DBE2732D494000396B2 /* NewsViewController.swift */,
 			);
 			path = viewControllers;
@@ -131,9 +145,21 @@
 		BDE06DC42732E213000396B2 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BD60C25127346D5F00A3A8C0 /* StringExtension.swift */,
+				BD60C25527346EF100A3A8C0 /* BundleExtension.swift */,
 				BDE06DC52732E229000396B2 /* UIColorExtension.swift */,
+				BD60C25327346E9600A3A8C0 /* UIDeviceExtension.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		BDE06DC927330DF1000396B2 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				BD60C2572734753900A3A8C0 /* API.txt */,
+				BDE06DCA27330E06000396B2 /* API.swift */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +222,8 @@
 			files = (
 				BDE06DB72732D150000396B2 /* to-do.plist in Resources */,
 				BDE06DAC2732CD42000396B2 /* LaunchScreen.storyboard in Resources */,
+				BDE06DCD27331562000396B2 /* notes.txt in Resources */,
+				BD60C2582734753900A3A8C0 /* API.txt in Resources */,
 				BDE06DA92732CD42000396B2 /* Assets.xcassets in Resources */,
 				BDE06DA72732CD3F000396B2 /* Main.storyboard in Resources */,
 			);
@@ -209,13 +237,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDE06DC12732D6E9000396B2 /* UIThemes.swift in Sources */,
-				BDE06DA42732CD3F000396B2 /* ViewController.swift in Sources */,
 				BDE06DB92732D21A000396B2 /* Utils.swift in Sources */,
+				BD60C25627346EF100A3A8C0 /* BundleExtension.swift in Sources */,
 				BDE06DA02732CD3F000396B2 /* AppDelegate.swift in Sources */,
 				BDE06DBF2732D494000396B2 /* NewsViewController.swift in Sources */,
+				BDE06DCB27330E06000396B2 /* API.swift in Sources */,
 				BDE06DC62732E229000396B2 /* UIColorExtension.swift in Sources */,
 				BDE06DBD2732D449000396B2 /* CustomNavController.swift in Sources */,
 				BDE06DC32732DB03000396B2 /* CommonData.swift in Sources */,
+				BDE06DC82733079B000396B2 /* NewsBaseViewController.swift in Sources */,
+				BD60C25427346E9600A3A8C0 /* UIDeviceExtension.swift in Sources */,
+				BD60C25227346D5F00A3A8C0 /* StringExtension.swift in Sources */,
 				BDE06DA22732CD3F000396B2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
