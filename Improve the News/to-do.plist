@@ -6,9 +6,11 @@
 	<dict>
 		<key>Data</key>
 		<dict>
-			<key>base url, traerla dinamicamente</key>
+			<key>API base url, traerla dinamicamente</key>
 			<string></string>
-			<key>traer el valor de los sliders dinamicamente</key>
+			<key>traer el valor de los sliders dinamicamente para llamar la API</key>
+			<string></string>
+			<key>parsear los banners desde la API</key>
 			<string></string>
 		</dict>
 		<key>UI</key>

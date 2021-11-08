@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftyJSON
 
 
 func API_BASE_URL() -> String {
@@ -16,7 +17,76 @@ func API_BASE_URL() -> String {
 
 class API {
     
-    static var shared = API()
+    func loadData(topic: String = "news",
+        itemsForTopic A: Int = 4,
+        itemsForSubTopics B: Int = 4,
+        skip S: Int = 0,
+        callback: @escaping (Bool, [Topic]) ->()) {
+        
+        let reqUrl = newsUrl(topic: topic, itemsForTopic: A, itemsForSubTopics: B, skip: S)
+        var request = URLRequest(url: URL(string: reqUrl)!)
+        request.httpMethod = "GET"
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if(error != nil) {
+                LOG_ERROR(path: "API/loadData", description: String(describing: error))
+                callback(false, [])
+                return
+            }
+            
+            if let _response = response as? HTTPURLResponse, let _data = data {
+                let statusCode = _response.statusCode
+                
+                if(statusCode == 200) { //ok!
+                    callback(true, self.parse(_data))
+                } else {
+                    LOG_ERROR(path: "API/loadData", description: "http statusCode \(statusCode)")
+                    callback(false, [])
+                }
+            }
+        }
+        
+        task.resume()
+    }
+    
+    
+}
+
+
+extension API {
+    
+    func parse(_ data: Data) -> [Topic] {
+        
+        var result = [Topic]()
+        
+        do {
+            let json = try JSON(data: data)
+            for (i, topicJson) in json {
+                let index = Int(i)!
+                if(index>0) { // First node is always empty
+                    let topicInfoJson = topicJson[0]
+                    if(self.isTopic(json: topicInfoJson)) {
+                        let topic = Topic(json: topicJson)
+                        result.append(topic)
+                    }
+                }
+            }
+            
+        } catch let error {
+            print("Error in API/parse: \(String(describing: error))")
+        }
+        
+        return result
+        
+    }
+    
+    func isBanner(json: JSON) -> Bool {
+        if(json[0].stringValue.uppercased()=="INFO") { return true }
+        return false
+    }
+    
+    func isTopic(json: JSON) -> Bool {
+        return !self.isBanner(json: json)
+    }
     
     func newsUrl(topic: String,
         itemsForTopic A: Int = 4,
@@ -38,41 +108,6 @@ class API {
         
         return result
     }
-    
-    func loadData() {
-        let reqUrl = URL(string: newsUrl(topic: "news"))!
-        
-        var request = URLRequest(url: reqUrl)
-        request.httpMethod = "GET"
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if(error != nil) {
-                print("Error in API/loadData: \(error)")
-                return
-            }
-            
-            if let _response = response as? HTTPURLResponse, let _data = data {
-                let statusCode = _response.statusCode
-                let text = String(data: _data, encoding: .utf8)
-                
-                print("")
-                
-                if(statusCode == 200) { //ok!
-                    
-                } else {
-                    print("Error in API/loadData, http statusCode \(statusCode)")
-                }
-            }
-        }
-        
-        task.resume()
-    }
-}
-
-
-
-
-
-extension API {
     
     static func UID() -> String {
         var result = "3"
@@ -96,7 +131,5 @@ extension API {
         
         return result
     }
-    
-    
     
 }

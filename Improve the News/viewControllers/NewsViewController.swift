@@ -27,8 +27,8 @@ class NewsViewController: NewsBaseViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        DELAY(1.0) {
-            API.shared.loadData()
+        DELAY(0.1) {
+            self.loadData()
         }
     }
 }

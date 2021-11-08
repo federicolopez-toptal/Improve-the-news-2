@@ -36,3 +36,14 @@ func NEWS_VC() -> NewsViewController {
 func DEVICE_NAME() -> String {
     return UIDevice.current.modelName.replacingOccurrences(of: " ", with: "_")
 }
+
+func VALIDATE_URL(_ url: String) -> Bool {
+    if let _url = URL(string: url) {
+        return UIApplication.shared.canOpenURL(_url)
+    }
+    return false
+}
+
+func LOG_ERROR(path: String, description: String) {
+    print("ERROR in: \(path) - \(description)")
+}
