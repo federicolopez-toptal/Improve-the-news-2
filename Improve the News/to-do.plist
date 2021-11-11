@@ -21,6 +21,10 @@
 			<string></string>
 			<key>iOS15: Fuentes embedidas en botones + IB</key>
 			<string></string>
+			<key>revisar la carga de imagenes (threads y demás)</key>
+			<string></string>
+			<key>agregar !!! de markup en los articulos</key>
+			<string></string>
 		</dict>
 		<key>CommonData</key>
 		<dict>

@@ -10,13 +10,14 @@ import Foundation
 class CommonData {
 
     static var shared = CommonData()
+    var currentUniqueId = 0
     
     var displayMode: DisplayMode?
     var selectedLayout: LayoutType?
-    var currentUniqueId = 0
+
 
     func start() {
-        self.displayMode = .dark    //!!!
-        self.selectedLayout = .denseIntense //!!!
+        self.displayMode = .dark           //!!!
+        self.selectedLayout = .denseIntense     //!!!
     }
 }

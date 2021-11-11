@@ -34,6 +34,9 @@ class ArticleDenseIntense: UITableViewCell {
         let stackView = self.contentView.subviews.first as! UIStackView
         stackView.backgroundColor = self.backgroundColor
         
+        self.thumb1.backgroundColor = COLOR(placeHolders_bgColor_dark,
+            placeHolders_bgColor_bright)
+        self.thumb2.backgroundColor = self.thumb1.backgroundColor
         self.thumb1.layer.cornerRadius = 15
         self.thumb1.clipsToBounds = true
         self.flag1.layer.cornerRadius = 10
@@ -42,10 +45,9 @@ class ArticleDenseIntense: UITableViewCell {
         self.flag2.layer.cornerRadius = 10
         self.thumb1.contentMode = .scaleAspectFill
         self.thumb2.contentMode = .scaleAspectFill
-        self.flag1.backgroundColor = COLOR(article_flagBgColor_dark,
-            article_flagBgColor_bright)
-        self.flag2.backgroundColor = COLOR(article_flagBgColor_dark,
-            article_flagBgColor_bright)
+        self.flag1.backgroundColor = COLOR(placeHolders_bgColor_dark,
+            placeHolders_bgColor_bright)
+        self.flag2.backgroundColor = self.flag1.backgroundColor
         
         let view1 = stackView.subviews[0]
         view1.backgroundColor = self.backgroundColor
@@ -56,11 +58,11 @@ class ArticleDenseIntense: UITableViewCell {
         self.title2Label.backgroundColor = self.backgroundColor
         self.source2Label.backgroundColor = self.backgroundColor
         
-        self.title1Label.textColor = COLOR(article_titleTextColor_dark,
-            article_titleTextColor_bright)
+        self.title1Label.textColor = COLOR(articles_titleTextColor_dark,
+            articles_titleTextColor_bright)
         self.title2Label.textColor = title1Label.textColor
-        self.source1Label.textColor = COLOR(article_sourceTextColor_dark,
-            article_sourceTextColor_bright)
+        self.source1Label.textColor = COLOR(articles_sourceTextColor_dark,
+            articles_sourceTextColor_bright)
         self.source2Label.textColor = self.source1Label.textColor
         
         self.title1Label.adjustsFontSizeToFitWidth = true
@@ -81,13 +83,7 @@ class ArticleDenseIntense: UITableViewCell {
         self.selectionStyle = .none
     }
     
-    private func getFlag(id: String) -> UIImage {
-        var result = UIImage(named: "\(id.uppercased())64.png")
-        if(result==nil) {
-            result = UIImage(named: "noFlag.png")
-        }
-        return result!
-    }
+    
 
     func update(article1: Article, article2: Article?) {
         self.updateUI()
@@ -98,7 +94,7 @@ class ArticleDenseIntense: UITableViewCell {
 
         self.thumb1.sd_setImage(with: URL(string: article1.imageUrl),
             placeholderImage: nil)
-        self.flag1.image = self.getFlag(id: article1.flag)
+        self.flag1.image = GET_FLAG(id: article1.flag)
         
         let stackView = self.contentView.subviews.first as! UIStackView
         let view2 = stackView.subviews[1]
@@ -109,7 +105,7 @@ class ArticleDenseIntense: UITableViewCell {
             
             self.thumb2.sd_setImage(with: URL(string: art2.imageUrl),
                 placeholderImage: nil)
-            self.flag2.image = self.getFlag(id: art2.flag)
+            self.flag2.image = GET_FLAG(id: art2.flag)
             
             view2.isHidden = false
         } else {

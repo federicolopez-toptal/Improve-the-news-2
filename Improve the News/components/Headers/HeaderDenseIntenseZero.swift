@@ -14,10 +14,10 @@ class HeaderDenseIntenseZero: UITableViewCell {
     
     // MARK: - UI update
     private func updateUI() {
-        self.backgroundColor = BG_COLOR()
-     
         self.selectionStyle = .none
-        self.topicNameButton.setTitleColor(header_mainTextColor, for: .normal)
+        self.backgroundColor = BG_COLOR()
+        
+        self.topicNameButton.setTitleColor(headers_mainTextColor, for: .normal)
         self.topicNameButton.titleLabel?.font = UIFont(name: "PTSerif-Bold", size: 40)
         self.topicNameButton.titleLabel?.minimumScaleFactor = 0.5
         self.topicNameButton.titleLabel?.adjustsFontSizeToFitWidth = true
@@ -26,7 +26,6 @@ class HeaderDenseIntenseZero: UITableViewCell {
     func update(topicName: String) {
         self.updateUI()
         self.topicNameButton.setTitle(topicName, for: .normal)
-        
     }
     
 }

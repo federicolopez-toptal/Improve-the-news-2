@@ -31,8 +31,8 @@ class FooterAbout: UITableViewCell {
         self.shareButton.layer.cornerRadius = 0.5 * 55
         self.selectionStyle = .none
         
-        self.topLine.backgroundColor = COLOR(footer_sepLineColor_dark,
-            footer_sepLineColor_bright)
+        self.topLine.backgroundColor = COLOR(articleTextOnly_separatorColor_dark,
+            articleTextOnly_separatorColor_bright)
     }
 
 }

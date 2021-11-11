@@ -74,6 +74,7 @@ extension NewsBaseViewController {
             self.dataProvider.append(footer)
         }
         
+        // Footer about - Bottom of list
         let footerAbout = ListItem(type: .footerAbout, topicIndex: 0)
         self.dataProvider.append(footerAbout)
     }
@@ -86,6 +87,10 @@ extension NewsBaseViewController {
                 } else {
                     return .headerDenseIntense
                 }
+                
+            case .textOnly:
+                return .headerDenseIntense
+                
             default:
                 return .headerDenseIntense
         }
@@ -95,6 +100,9 @@ extension NewsBaseViewController {
         switch CommonData.shared.selectedLayout {
             case .denseIntense:
                 return .articleDenseIntense
+            case .textOnly:
+                return .articleTextOnly
+                
             default:
                 return .articleDenseIntense
         }

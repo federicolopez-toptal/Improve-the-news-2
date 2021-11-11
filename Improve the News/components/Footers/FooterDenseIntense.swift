@@ -31,10 +31,10 @@ class FooterDenseIntense: UITableViewCell {
         self.selectionStyle = .none
     }
     
-    func update(topicName: String, line: Bool = true) {
+    func update(topicName: String, separator: Bool) {
         self.updateUI()
         self.topicButton.setTitle(topicName, for: .normal)
-        self.topLine.isHidden = !line
+        self.topLine.isHidden = !separator
     }
     
 }

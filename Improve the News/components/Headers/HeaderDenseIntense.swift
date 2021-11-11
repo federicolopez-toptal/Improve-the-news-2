@@ -12,11 +12,15 @@ class HeaderDenseIntense: UITableViewCell {
     @IBOutlet weak var topicNameButton: UIButton!
     @IBOutlet weak var hierarchyView: UIView!
     
+    private let hierarchyTextColor_dark = UIColor(rgb: 0x334262)
+    private let hierarchyTextColor_bright = UIColor.black.withAlphaComponent(0.3)
+    
+    
     private func updateUI() {
         self.backgroundColor = BG_COLOR()
         
         self.selectionStyle = .none
-        self.topicNameButton.setTitleColor(header_mainTextColor, for: .normal)
+        self.topicNameButton.setTitleColor(headers_mainTextColor, for: .normal)
         self.topicNameButton.titleLabel?.font = UIFont(name: "PTSerif-Bold", size: 30)
         self.topicNameButton.titleLabel?.minimumScaleFactor = 0.5
         self.topicNameButton.titleLabel?.adjustsFontSizeToFitWidth = true
@@ -48,10 +52,10 @@ class HeaderDenseIntense: UITableViewCell {
             ])
             
             button.titleLabel?.font = UIFont(name: "Poppins-SemiBold", size: 13)
-            button.setTitleColor(header_hierarchyTextColor_dark, for: .normal)
-            if(BRIGHT_MODE()){ button.setTitleColor(header_hierarchyTextColor_bright,
-                for: .normal) }
-            button.sizeToFit()
+            button.setTitleColor(self.hierarchyTextColor_dark, for: .normal)
+            if(BRIGHT_MODE()){
+                button.setTitleColor(self.hierarchyTextColor_bright, for: .normal)
+            }; button.sizeToFit()
             
             if(hierarchy.count>0 && i<hierarchy.count-1) {
                 let arrow = UILabel()
