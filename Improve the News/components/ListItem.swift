@@ -11,10 +11,10 @@ import UIKit
 
 enum ListItemType: CGFloat {
     // The raw values represents the component height
-    case headerDenseIntenseZero = 51.1
-    case headerDenseIntense = 51.2
+    case headerDenseIntenseZero = 60.0
+    case headerDenseIntense = 53.0
     
-    case articleDenseIntense = 10.0
+    case articleDenseIntense = 240.0    // 2 columns
     case footerDenseIntense = 20.0
 }
 

@@ -54,8 +54,8 @@ extension NewsViewController {
     private func initList() {
         self.list.delegate = self
         self.list.dataSource = self
-        self.list.separatorStyle = .singleLine
-        self.list.separatorColor = .white //!!!
+        self.list.separatorStyle = .none //.singleLine
+        self.list.separatorColor = DARK_MODE() ? .white : .black
         self.list.indicatorStyle = DARK_MODE() ? .white : .black
         self.list.tableFooterView = UIView()
         
@@ -63,6 +63,7 @@ extension NewsViewController {
         if(CommonData.shared.selectedLayout == .denseIntense) {
             nibs.append("HeaderDenseIntenseZero")
             nibs.append("HeaderDenseIntense")
+            nibs.append("ArticleDenseIntense")
         }
         
         for N in nibs {
@@ -110,6 +111,9 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
                 cell = cell_headerDenseIntenseZero(index: item.topicIndex)
             case .headerDenseIntense:
                 cell = cell_headerDenseIntense(index: item.topicIndex)
+            case .articleDenseIntense:
+                cell = cell_articleDenseIntense(index: item.topicIndex,
+                    subIndex: item.articleIndex!)
                 
                 
             default:
@@ -131,17 +135,24 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
             "HeaderDenseIntenseZero") as! HeaderDenseIntenseZero
                 
         cell.update(topicName: self.topics[index].nameToDisplay)
-            
         return cell
     }
     
     func cell_headerDenseIntense(index: Int) -> HeaderDenseIntense {
         let cell = self.list.dequeueReusableCell(withIdentifier:
             "HeaderDenseIntense") as! HeaderDenseIntense
-                
+
         cell.update(topicName: self.topics[index].nameToDisplay,
             hierarchy: self.topics[index].hierarchy)
+        return cell
+    }
+    
+    func cell_articleDenseIntense(index: Int, subIndex: Int) -> ArticleDenseIntense {
+        let cell = self.list.dequeueReusableCell(withIdentifier:
+            "ArticleDenseIntense") as! ArticleDenseIntense
             
+        cell.update(article1: self.topics[index].articles[subIndex],
+            article2: self.topics[index].articles[subIndex+1])
         return cell
     }
 

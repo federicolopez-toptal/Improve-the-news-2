@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="HeaderDenseIntense" customModule="Improve_the_News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9O-zA-nI8">
+                        <rect key="frame" x="10" y="20" width="300" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="ojp-Qi-U1U"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="HHH sdfsdf sdfsd">
+                            <fontDescription key="titleFontDescription" name="PTSerif-Bold" family="PT Serif" pointSize="30"/>
+                        </buttonConfiguration>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YNq-1k-7aK">
+                        <rect key="frame" x="10" y="3" width="300" height="15"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Dh7-iJ-Awn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="w9O-zA-nI8" secondAttribute="trailing" constant="10" id="5uO-vI-c2A"/>
+                    <constraint firstItem="w9O-zA-nI8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="AWd-Lx-oOi"/>
+                    <constraint firstItem="YNq-1k-7aK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ahn-kE-fKg"/>
+                    <constraint firstItem="YNq-1k-7aK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="BAd-Zc-7gj"/>
+                    <constraint firstAttribute="trailing" secondItem="YNq-1k-7aK" secondAttribute="trailing" constant="10" id="XaA-ap-Asc"/>
+                    <constraint firstAttribute="bottom" secondItem="w9O-zA-nI8" secondAttribute="bottom" constant="2" id="kuC-v9-Crs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="hierarchyView" destination="YNq-1k-7aK" id="RHg-eB-lci"/>
+                <outlet property="topicNameButton" destination="w9O-zA-nI8" id="LWh-2J-HDk"/>
+            </connections>
+            <point key="canvasLocation" x="-607.24637681159425" y="23.772321428571427"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

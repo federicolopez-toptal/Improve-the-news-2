@@ -49,7 +49,9 @@ class HeaderDenseIntense: UITableViewCell {
             ])
             
             button.titleLabel?.font = UIFont(name: "Poppins-SemiBold", size: 13)
-            button.setTitleColor(header_hierarchyTextColor, for: .normal)
+            button.setTitleColor(header_hierarchyTextColor_dark, for: .normal)
+            if(BRIGHT_MODE()){ button.setTitleColor(header_hierarchyTextColor_bright,
+                for: .normal) }
             button.sizeToFit()
             
             if(hierarchy.count>0 && i<hierarchy.count-1) {

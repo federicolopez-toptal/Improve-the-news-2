@@ -25,7 +25,7 @@ class NewsBaseViewController: UIViewController {
     }
     
     func loadData(callback: @escaping (Bool) ->()) {
-        self.api.loadData(topic: "asia") { (succed, topics) in
+        self.api.loadData { (succed, topics) in
             if(!succed) {
                 callback(false)
                 return
@@ -50,7 +50,6 @@ extension NewsBaseViewController {
             let header = ListItem(type: self.headerType(index: i), topicIndex: i)
             self.dataProvider.append(header)
             
-            /*
             // Articles
             if(CommonData.shared.selectedLayout == .denseIntense) {
                 // 1 item -> 2 articles
@@ -70,6 +69,7 @@ extension NewsBaseViewController {
                 }
             }
 
+            /*
             // Footer
             let footer = ListItem(type: self.footerType(), topicIndex: i)
             self.dataProvider.append(footer)
