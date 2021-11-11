@@ -26,6 +26,13 @@ let stanceMiniSliders_lineColor_dark = UIColor(rgb: 0x4F5F8B)
 let stanceMiniSliders_lineColor_bright = UIColor(rgb: 0xD3592D)
 let stanceMiniSliders_thumbColor_dark = UIColor(rgb: 0xDFE1D8)
 let stanceMiniSliders_thumbColor_bright = UIColor(rgb: 0xD3592D)
+let footer_moreTextColor_dark = UIColor(rgb: 0x334262)
+let footer_moreTextColor_bright = UIColor.black.withAlphaComponent(0.3)
+let footer_topicTextColor = UIColor(rgb: 0xD3592D)
+let footer_sepLineColor_dark = UIColor(rgb: 0x334262)
+let footer_sepLineColor_bright = UIColor.black.withAlphaComponent(0.3)
+let footerAbout_textsColor_dark = UIColor(rgb: 0x737D96)
+let footerAbout_textsColor_bright = UIColor.black
 
 //------------------------------------------
 enum DisplayMode {
@@ -58,4 +65,8 @@ func UPDATE_STATUSBAR_COLOR(navBar: UINavigationBar?) {
 
 func COLOR(_ forDarkMode: UIColor, _ forBrightMode: UIColor) -> UIColor {
     return DARK_MODE() ? forDarkMode : forBrightMode
+}
+
+func BG_COLOR() -> UIColor {
+    return COLOR(viewController_bgColor_dark, viewController_bgColor_bright)
 }

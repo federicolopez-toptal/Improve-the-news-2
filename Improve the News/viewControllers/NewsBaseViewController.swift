@@ -69,12 +69,13 @@ extension NewsBaseViewController {
                 }
             }
 
-            /*
             // Footer
             let footer = ListItem(type: self.footerType(), topicIndex: i)
             self.dataProvider.append(footer)
-            */
         }
+        
+        let footerAbout = ListItem(type: .footerAbout, topicIndex: 0)
+        self.dataProvider.append(footerAbout)
     }
     
     private func headerType(index: Int) -> ListItemType {

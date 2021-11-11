@@ -30,9 +30,7 @@ class ArticleDenseIntense: UITableViewCell {
     @IBOutlet weak var source2Label: UILabel!
 
     private func updateUI() {
-        self.backgroundColor = COLOR(viewController_bgColor_dark,
-            viewController_bgColor_bright)
-            
+        self.backgroundColor = BG_COLOR()
         let stackView = self.contentView.subviews.first as! UIStackView
         stackView.backgroundColor = self.backgroundColor
         

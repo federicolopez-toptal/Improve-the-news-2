@@ -22,6 +22,11 @@
 		BD7B3B11273C542C000C4A54 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD7B3B10273C5240000C4A54 /* Poppins-SemiBold.ttf */; };
 		BD84C9B3273586FE005E9526 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84C9B2273586FE005E9526 /* Topic.swift */; };
 		BD84C9B52735B7FF005E9526 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84C9B42735B7FF005E9526 /* Article.swift */; };
+		BD96B1E6273D4E1600AFDF6F /* FooterDenseIntense.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96B1E4273D4E1600AFDF6F /* FooterDenseIntense.swift */; };
+		BD96B1E7273D4E1600AFDF6F /* FooterDenseIntense.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD96B1E5273D4E1600AFDF6F /* FooterDenseIntense.xib */; };
+		BD96B1EA273D5BE600AFDF6F /* FooterAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96B1E8273D5BE500AFDF6F /* FooterAbout.swift */; };
+		BD96B1EB273D5BE600AFDF6F /* FooterAbout.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD96B1E9273D5BE600AFDF6F /* FooterAbout.xib */; };
+		BD96B1EF273D5E1600AFDF6F /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD96B1EE273D5E1600AFDF6F /* OpenSans-Regular.ttf */; };
 		BDAF7B47273CBAFF00028D88 /* ArticleDenseIntense.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAF7B45273CBAFE00028D88 /* ArticleDenseIntense.swift */; };
 		BDAF7B48273CBAFF00028D88 /* ArticleDenseIntense.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDAF7B46273CBAFE00028D88 /* ArticleDenseIntense.xib */; };
 		BDAF7C0E273CCECF00028D88 /* TUN64.png in Resources */ = {isa = PBXBuildFile; fileRef = BDAF7B4A273CCECF00028D88 /* TUN64.png */; };
@@ -235,7 +240,6 @@
 		BDE06DC62732E229000396B2 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DC52732E229000396B2 /* UIColorExtension.swift */; };
 		BDE06DC82733079B000396B2 /* NewsBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DC72733079B000396B2 /* NewsBaseViewController.swift */; };
 		BDE06DCB27330E06000396B2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE06DCA27330E06000396B2 /* API.swift */; };
-		BDE06DCD27331562000396B2 /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = BDE06DCC27331561000396B2 /* notes.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -255,6 +259,11 @@
 		BD7B3B10273C5240000C4A54 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		BD84C9B2273586FE005E9526 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		BD84C9B42735B7FF005E9526 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		BD96B1E4273D4E1600AFDF6F /* FooterDenseIntense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterDenseIntense.swift; sourceTree = "<group>"; };
+		BD96B1E5273D4E1600AFDF6F /* FooterDenseIntense.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterDenseIntense.xib; sourceTree = "<group>"; };
+		BD96B1E8273D5BE500AFDF6F /* FooterAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterAbout.swift; sourceTree = "<group>"; };
+		BD96B1E9273D5BE600AFDF6F /* FooterAbout.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterAbout.xib; sourceTree = "<group>"; };
+		BD96B1EE273D5E1600AFDF6F /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		BDAF7B45273CBAFE00028D88 /* ArticleDenseIntense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDenseIntense.swift; sourceTree = "<group>"; };
 		BDAF7B46273CBAFE00028D88 /* ArticleDenseIntense.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleDenseIntense.xib; sourceTree = "<group>"; };
 		BDAF7B4A273CCECF00028D88 /* TUN64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TUN64.png; sourceTree = "<group>"; };
@@ -470,7 +479,6 @@
 		BDE06DC52732E229000396B2 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		BDE06DC72733079B000396B2 /* NewsBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBaseViewController.swift; sourceTree = "<group>"; };
 		BDE06DCA27330E06000396B2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		BDE06DCC27331561000396B2 /* notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
 		C7DA929B1D7A3C2C69288527 /* Pods_Improve_the_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Improve_the_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -500,6 +508,7 @@
 			children = (
 				BD2AA64F273AD0A80051B431 /* PTSerif-Bold.ttf */,
 				BD7B3B10273C5240000C4A54 /* Poppins-SemiBold.ttf */,
+				BD96B1EE273D5E1600AFDF6F /* OpenSans-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -513,6 +522,17 @@
 				BD2AA652273AFA4F0051B431 /* HeaderDenseIntense.xib */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		BD96B1E3273D4DD900AFDF6F /* Footers */ = {
+			isa = PBXGroup;
+			children = (
+				BD96B1E4273D4E1600AFDF6F /* FooterDenseIntense.swift */,
+				BD96B1E5273D4E1600AFDF6F /* FooterDenseIntense.xib */,
+				BD96B1E8273D5BE500AFDF6F /* FooterAbout.swift */,
+				BD96B1E9273D5BE600AFDF6F /* FooterAbout.xib */,
+			);
+			path = Footers;
 			sourceTree = "<group>";
 		};
 		BDAF7B44273CBAD900028D88 /* Articles */ = {
@@ -756,7 +776,6 @@
 				BDE06DBB2732D42B000396B2 /* components */,
 				BDE06DB52732D119000396B2 /* viewControllers */,
 				BDE06DB42732D104000396B2 /* resources */,
-				BDE06DCC27331561000396B2 /* notes.txt */,
 				BDE06DB62732D150000396B2 /* to-do.plist */,
 			);
 			path = "Improve the News";
@@ -808,6 +827,7 @@
 				BD3E1F302739B16F00E44BBD /* ListItem.swift */,
 				BD3E1F322739B60E00E44BBD /* Headers */,
 				BDAF7B44273CBAD900028D88 /* Articles */,
+				BD96B1E3273D4DD900AFDF6F /* Footers */,
 				BDE06DBC2732D449000396B2 /* CustomNavController.swift */,
 				BDAF7CD2273CD2AE00028D88 /* StanceMiniSliders.swift */,
 			);
@@ -972,9 +992,9 @@
 				BDAF7CC5273CCED000028D88 /* YEM64.png in Resources */,
 				BDAF7C5B273CCED000028D88 /* SVK64.png in Resources */,
 				BDAF7C75273CCED000028D88 /* GTM64.png in Resources */,
+				BD96B1EF273D5E1600AFDF6F /* OpenSans-Regular.ttf in Resources */,
 				BDE06DAC2732CD42000396B2 /* LaunchScreen.storyboard in Resources */,
 				BDAF7C7D273CCED000028D88 /* LBY64.png in Resources */,
-				BDE06DCD27331562000396B2 /* notes.txt in Resources */,
 				BDAF7C4E273CCED000028D88 /* ARE64.png in Resources */,
 				BDAF7C54273CCED000028D88 /* ARG64.png in Resources */,
 				BDAF7CBA273CCED000028D88 /* IRN64.png in Resources */,
@@ -1020,6 +1040,7 @@
 				BDAF7C21273CCECF00028D88 /* CHE64.png in Resources */,
 				BDAF7C30273CCECF00028D88 /* BEL64.png in Resources */,
 				BDAF7C39273CCED000028D88 /* SYC64.png in Resources */,
+				BD96B1E7273D4E1600AFDF6F /* FooterDenseIntense.xib in Resources */,
 				BDAF7C66273CCED000028D88 /* STP64.png in Resources */,
 				BDAF7CA8273CCED000028D88 /* MUS64.png in Resources */,
 				BDAF7C36273CCED000028D88 /* BFA64.png in Resources */,
@@ -1059,6 +1080,7 @@
 				BDAF7CAD273CCED000028D88 /* LSO64.png in Resources */,
 				BDAF7C85273CCED000028D88 /* TCA64.png in Resources */,
 				BDAF7C2D273CCECF00028D88 /* FJI64.png in Resources */,
+				BD96B1EB273D5BE600AFDF6F /* FooterAbout.xib in Resources */,
 				BDAF7C3C273CCED000028D88 /* ZWE64.png in Resources */,
 				BDAF7C4C273CCED000028D88 /* COL64.png in Resources */,
 				BDAF7C1A273CCECF00028D88 /* MLI64.png in Resources */,
@@ -1167,12 +1189,14 @@
 				BDE06DC12732D6E9000396B2 /* UIThemes.swift in Sources */,
 				BDE06DB92732D21A000396B2 /* Utils.swift in Sources */,
 				BD60C25627346EF100A3A8C0 /* BundleExtension.swift in Sources */,
+				BD96B1E6273D4E1600AFDF6F /* FooterDenseIntense.swift in Sources */,
 				BDAF7CD3273CD2AE00028D88 /* StanceMiniSliders.swift in Sources */,
 				BDE06DA02732CD3F000396B2 /* AppDelegate.swift in Sources */,
 				BDE06DBF2732D494000396B2 /* NewsViewController.swift in Sources */,
 				BDE06DCB27330E06000396B2 /* API.swift in Sources */,
 				BDE06DC62732E229000396B2 /* UIColorExtension.swift in Sources */,
 				BD3E1F2F2739A08300E44BBD /* Markup.swift in Sources */,
+				BD96B1EA273D5BE600AFDF6F /* FooterAbout.swift in Sources */,
 				BDE06DBD2732D449000396B2 /* CustomNavController.swift in Sources */,
 				BDE06DC32732DB03000396B2 /* CommonData.swift in Sources */,
 				BD3E1F352739B64600E44BBD /* HeaderDenseIntenseZero.swift in Sources */,

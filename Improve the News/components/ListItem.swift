@@ -15,7 +15,9 @@ enum ListItemType: CGFloat {
     case headerDenseIntense = 53.0
     
     case articleDenseIntense = 240.0    // 2 columns
-    case footerDenseIntense = 20.0
+    case footerDenseIntense = 70.0
+    
+    case footerAbout = 200.0
 }
 
 struct ListItem {

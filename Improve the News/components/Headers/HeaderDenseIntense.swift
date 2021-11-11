@@ -13,8 +13,7 @@ class HeaderDenseIntense: UITableViewCell {
     @IBOutlet weak var hierarchyView: UIView!
     
     private func updateUI() {
-        self.backgroundColor = COLOR(viewController_bgColor_dark,
-            viewController_bgColor_bright)
+        self.backgroundColor = BG_COLOR()
         
         self.selectionStyle = .none
         self.topicNameButton.setTitleColor(header_mainTextColor, for: .normal)

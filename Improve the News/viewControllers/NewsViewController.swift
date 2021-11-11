@@ -47,7 +47,7 @@ class NewsViewController: NewsBaseViewController {
 extension NewsViewController {
     
     private func initUI() {
-        self.view.backgroundColor = COLOR(viewController_bgColor_dark, viewController_bgColor_bright)
+        self.view.backgroundColor = BG_COLOR()
         self.list.backgroundColor = self.view.backgroundColor
     }
     
@@ -64,6 +64,8 @@ extension NewsViewController {
             nibs.append("HeaderDenseIntenseZero")
             nibs.append("HeaderDenseIntense")
             nibs.append("ArticleDenseIntense")
+            nibs.append("FooterDenseIntense")
+            nibs.append("FooterAbout")
         }
         
         for N in nibs {
@@ -114,6 +116,10 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
             case .articleDenseIntense:
                 cell = cell_articleDenseIntense(index: item.topicIndex,
                     subIndex: item.articleIndex!)
+            case .footerDenseIntense:
+                cell = cell_footerDenseIntense(index: item.topicIndex)
+            case .footerAbout:
+                cell = cell_footerAbout()
                 
                 
             default:
@@ -153,6 +159,20 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
             
         cell.update(article1: self.topics[index].articles[subIndex],
             article2: self.topics[index].articles[subIndex+1])
+        return cell
+    }
+    
+    func cell_footerDenseIntense(index: Int) -> FooterDenseIntense {
+        let cell = self.list.dequeueReusableCell(withIdentifier: "FooterDenseIntense") as! FooterDenseIntense
+        
+        let line = (index==0) ? false : true
+        cell.update(topicName: self.topics[index].nameToDisplay, line: line)
+        return cell
+    }
+    
+    func cell_footerAbout() -> FooterAbout {
+        let cell = self.list.dequeueReusableCell(withIdentifier: "FooterAbout") as! FooterAbout
+        cell.updateUI()
         return cell
     }
 

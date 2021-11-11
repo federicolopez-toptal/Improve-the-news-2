@@ -22,8 +22,7 @@ class StanceMiniSliders {
     init(into containerView: UIView, factor: CGFloat = 1.0) {
         self.factor = factor
     
-        containerView.backgroundColor = COLOR(viewController_bgColor_dark,
-            viewController_bgColor_bright)
+        containerView.backgroundColor = BG_COLOR()
             
         containerView.layer.cornerRadius = 15.0
         containerView.layer.maskedCorners = [.layerMaxXMinYCorner]

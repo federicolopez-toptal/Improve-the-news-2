@@ -15,9 +15,11 @@
 		</dict>
 		<key>UI</key>
 		<dict>
-			<key>Averiguar xq el UINavigationBarAppearance me jode el style del statusBar</key>
+			<key>iOS15 Averiguar xq el UINavigationBarAppearance me jode el style del statusBar</key>
 			<string></string>
 			<key>Barra de navegacion: Linea en el bottom</key>
+			<string></string>
+			<key>iOS15: Fuentes embedidas en botones + IB</key>
 			<string></string>
 		</dict>
 		<key>CommonData</key>
@@ -28,7 +30,5 @@
 			<string></string>
 		</dict>
 	</dict>
-	<key>Listos</key>
-	<dict/>
 </dict>
 </plist>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FooterAbout" customModule="Improve_the_News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ITN-logo_darkText" translatesAutoresizingMaskIntoConstraints="NO" id="1WU-R6-bSZ">
+                        <rect key="frame" x="15" y="15" width="195" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="8k5-Gx-ZiV"/>
+                            <constraint firstAttribute="width" constant="195" id="QM6-CM-Lnf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2021 Improve The News Foundation - All Rights Reserved" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMQ-ba-fLO">
+                        <rect key="frame" x="15" y="104" width="290" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A non-profit news aggregator helping you break out of your filter bubble" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCt-6I-PyF">
+                        <rect key="frame" x="15" y="50" width="290" height="44"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHb-ZF-yl2">
+                        <rect key="frame" x="10" y="0.0" width="300" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="j6M-OO-1b1"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBE-C5-9ea">
+                        <rect key="frame" x="132.5" y="125" width="55" height="55"/>
+                        <color key="backgroundColor" red="0.82745098039999998" green="0.34901960780000002" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="6U5-1B-EcJ"/>
+                            <constraint firstAttribute="height" constant="55" id="XbH-QU-ZUb"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="DCt-6I-PyF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="GHY-0q-v1W"/>
+                    <constraint firstItem="pHb-ZF-yl2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Htp-oh-vLd"/>
+                    <constraint firstItem="1WU-R6-bSZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="K3M-LO-cWh"/>
+                    <constraint firstAttribute="trailing" secondItem="UMQ-ba-fLO" secondAttribute="trailing" constant="15" id="LNp-Oq-pck"/>
+                    <constraint firstItem="DCt-6I-PyF" firstAttribute="top" secondItem="1WU-R6-bSZ" secondAttribute="bottom" constant="5" id="X3q-h4-aOV"/>
+                    <constraint firstItem="1WU-R6-bSZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="a4q-05-5Vr"/>
+                    <constraint firstAttribute="bottom" secondItem="NBE-C5-9ea" secondAttribute="bottom" constant="10" id="aNT-el-AeK"/>
+                    <constraint firstAttribute="trailing" secondItem="pHb-ZF-yl2" secondAttribute="trailing" constant="10" id="d0L-uo-dB1"/>
+                    <constraint firstItem="NBE-C5-9ea" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="e0P-w2-YQO"/>
+                    <constraint firstItem="UMQ-ba-fLO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="jY2-Vg-eWy"/>
+                    <constraint firstAttribute="trailing" secondItem="DCt-6I-PyF" secondAttribute="trailing" constant="15" id="poL-6G-lfl"/>
+                    <constraint firstItem="pHb-ZF-yl2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yte-rE-8Fh"/>
+                    <constraint firstItem="UMQ-ba-fLO" firstAttribute="top" secondItem="DCt-6I-PyF" secondAttribute="bottom" constant="10" id="zUe-OH-5Ba"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="logoImageView" destination="1WU-R6-bSZ" id="OBr-rx-ECs"/>
+                <outlet property="shareButton" destination="NBE-C5-9ea" id="Yeu-jT-hLH"/>
+                <outlet property="topLine" destination="pHb-ZF-yl2" id="OmU-mE-RqP"/>
+            </connections>
+            <point key="canvasLocation" x="74" y="-1"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ITN-logo_darkText" width="630" height="97"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+    </resources>
+</document>
