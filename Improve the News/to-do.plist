@@ -17,10 +17,14 @@
 		<dict>
 			<key>Averiguar xq el UINavigationBarAppearance me jode el style del statusBar</key>
 			<string></string>
+			<key>Barra de navegacion: Linea en el bottom</key>
+			<string></string>
 		</dict>
 		<key>CommonData</key>
 		<dict>
 			<key>Leer display mode desde un setting local</key>
+			<string></string>
+			<key>Leer layout desde un setting local o similar</key>
 			<string></string>
 		</dict>
 	</dict>

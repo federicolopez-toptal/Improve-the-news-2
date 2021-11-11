@@ -12,9 +12,11 @@ class CommonData {
     static var shared = CommonData()
     
     var displayMode: DisplayMode?
+    var selectedLayout: LayoutType?
     var currentUniqueId = 0
 
     func start() {
-        self.displayMode = .dark//!!!
+        self.displayMode = .dark    //!!!
+        self.selectedLayout = .denseIntense //!!!
     }
 }

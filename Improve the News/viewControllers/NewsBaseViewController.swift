@@ -24,36 +24,93 @@ class NewsBaseViewController: UIViewController {
         self.initNavBar()
     }
     
-    func loadData() {
-        self.api.loadData { (succed, topics) in
+    func loadData(callback: @escaping (Bool) ->()) {
+        self.api.loadData(topic: "asia") { (succed, topics) in
             if(!succed) {
+                callback(false)
                 return
             }
+            
             self.populateDataProvider(topics)
+            callback(true)
         }
     }
     
+}
+
+// DataProvider for UI
+extension NewsBaseViewController {
+
     func populateDataProvider(_ topics: [Topic]) {
         self.topics = topics
         self.dataProvider = [ListItem]()
         for (i, topic) in topics.enumerated() {
-            let header = ListItem(type: .header, topicIndex: i)
+        
+            // Header
+            let header = ListItem(type: self.headerType(index: i), topicIndex: i)
             self.dataProvider.append(header)
             
-            // Dense & Intense layout
-            for j in 0..<topic.articles.count {
-                if (j%2 == 0) {
-                    let article = ListItem(type: .article_2columns, topicIndex: i, articleIndex: j)
+            /*
+            // Articles
+            if(CommonData.shared.selectedLayout == .denseIntense) {
+                // 1 item -> 2 articles
+                for j in 0..<topic.articles.count {
+                    if (j%2 == 0) {
+                        let article = ListItem(type: .articleDenseIntense,
+                            topicIndex: i, articleIndex: j)
+                        self.dataProvider.append(article)
+                    }
+                }
+            } else {
+                // 1 item -> 1 article
+                for j in 0..<topic.articles.count {
+                    let article = ListItem(type: self.articleType(),
+                            topicIndex: i, articleIndex: j)
                     self.dataProvider.append(article)
                 }
             }
-            
-            let footer = ListItem(type: .footer, topicIndex: i)
+
+            // Footer
+            let footer = ListItem(type: self.footerType(), topicIndex: i)
             self.dataProvider.append(footer)
+            */
         }
     }
     
-
+    private func headerType(index: Int) -> ListItemType {
+        switch CommonData.shared.selectedLayout {
+            case .denseIntense:
+                if(index==0) {
+                    return .headerDenseIntenseZero
+                } else {
+                    return .headerDenseIntense
+                }
+            default:
+                return .headerDenseIntense
+        }
+    }
+    
+    private func articleType() -> ListItemType {
+        switch CommonData.shared.selectedLayout {
+            case .denseIntense:
+                return .articleDenseIntense
+            default:
+                return .articleDenseIntense
+        }
+    }
+    
+    private func footerType() -> ListItemType {
+        switch CommonData.shared.selectedLayout {
+            case .denseIntense:
+                return .footerDenseIntense
+            default:
+                return .footerDenseIntense
+        }
+    }
+    
+    func checkListItemType(_ index: Int, type: ListItemType) -> Bool {
+        return self.dataProvider[index].type == type
+    }
 }
 
 // UI customization

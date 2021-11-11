@@ -11,11 +11,21 @@ import UIKit
 
 let navBar_bgColor_dark = UIColor(rgb: 0x0B1229)
 let navBar_bgColor_bright = UIColor(rgb: 0xE8E5E7)
+let viewController_bgColor_dark = UIColor(rgb: 0x131B33)
+let viewController_bgColor_bright = UIColor(rgb: 0xFFFFFF)
+let header_mainTextColor = UIColor(rgb: 0xD3592D)
+let header_hierarchyTextColor = UIColor(rgb: 0x334262)
 
 //------------------------------------------
 enum DisplayMode {
     case dark
     case bright
+}
+
+enum LayoutType {
+    case denseIntense
+    case textOnly
+    case bigBeautiful
 }
 
 //------------------------------------------

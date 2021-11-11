@@ -72,7 +72,7 @@ extension API {
             }
             
         } catch let error {
-            print("Error in API/parse: \(String(describing: error))")
+            LOG_ERROR(path: "API/parse", description: String(describing: error))
         }
         
         return result

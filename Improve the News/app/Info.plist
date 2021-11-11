@@ -25,5 +25,10 @@
 	<string>UIStatusBarStyleDefault</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>PTSerif-Bold.ttf</string>
+		<string>Poppins-SemiBold.ttf</string>
+	</array>
 </dict>
 </plist>
